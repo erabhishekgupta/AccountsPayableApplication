@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contract Payment Reminder</title>
+</head>
+<body>
+    <h2 style="color: #2c3e50;">Dear <Strong th:text="${customerName}">Customer Name</Strong>,</h2>
+    <p>This is a gentle reminder that your contract with <strong th:text="${vendorName}">Vendor Name</strong> is expiring soon.</p>
+    
+    <p><strong>PO Reference:</strong> <span th:text="${poReference}"></span></p>
+    <p><strong>Contract End Date:</strong> <span th:text="${endDate}"></span></p>
+    
+    <p>Please ensure that the payment is made before the due date to avoid any interruption in services.</p>
+    
+    <p>Attached is the invoice for your reference.</p>
+    
+    <p>Regards,<br/>Accounts Payable Team</p>
+</body>
+</html>

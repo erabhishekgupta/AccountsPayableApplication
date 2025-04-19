@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Receivable Contract Notification</title>
+</head>
+<body>
+    <h2 style="color: #2c3e50;">Dear <Strong th:text="${vendorName}">Customer Name</Strong></h2>
+    <p>This is to inform you that your contract with the customer is expiring soon.</p>
+    
+    <p><strong>PO Reference:</strong> <span th:text="${poReference}"></span></p>
+    <p><strong>Contract End Date:</strong> <span th:text="${endDate}"></span></p>
+    
+    <p>Please expect payment soon. Kindly review the attached invoice for your records.</p>
+    
+    <p>Regards,<br/>Accounts Payable Team</p>
+</body>
+</html>

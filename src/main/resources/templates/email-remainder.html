@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+        color: #333;
+      }
+
+      .email-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        max-width: 600px;
+        margin: auto;
+      }
+
+      h2 {
+        color: #007bff;
+        margin-top: 0;
+      }
+
+      .cta-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+
+      .footer {
+        font-size: 0.85em;
+        color: gray;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .highlight {
+        background-color: #f0f8ff;
+        padding: 8px 12px;
+        border-left: 4px solid #007bff;
+        margin: 15px 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <h2>📢 Contract Expiry Reminder</h2>
+      <p>Greetings From : <b>[[${vendorName}]]</b>,</p>
+
+      <div class="highlight">
+        <p>📝 Your contract with PO Reference <b>[[${poReference}]]</b> is set to expire on <b>[[${endDate}]]</b>.</p>
+      </div>
+
+      <p>Please take necessary action to renew it before the expiry date.</p>
+      <p>Invoice is attached to this mail and check the mail and renew the contract before it expiration.
+
+      <a href="http://yourapp.com/contracts" class="cta-button">🔄 Review Contract</a>
+
+      <p class="footer">
+        This is an automated message from the APA System.<br />
+        Please do not reply to this email.
+      </p>
+    </div>
+  </body>
+</html>
